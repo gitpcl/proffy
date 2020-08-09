@@ -6,9 +6,10 @@ const subjects = [
     "Physics",
     "Geography",
     "History",
-    "math",
+    "Math",
     "English",
-    "Chemistry"
+    "Chemistry",
+    "Technology"
 ]
 
 const weekdays = [

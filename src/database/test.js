@@ -4,14 +4,14 @@ const createProffy = require('./createProffy')
 Database.then(async (db) => {
     // inset data
     proffyValue = {
-        name: "Diego Fernandes",
-        avatar: "https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4", 
-        whatsapp: "553599760853", 
-        bio: "Entusiasta das melhores tecnologias de química avançada.<br><br>Apaixonado por explodir coisas em laboratório e por mudar a vida das pessoas através de experiências. Mais de 200.000 pessoas já passaram por uma das minhas explosões.", 
+        name: "Pedro Lopes",
+        avatar: "https://avatars0.githubusercontent.com/u/18017083?s=460&u=efa162ed5c88f927283a47e2e304c5f6b7fe65a8&v=4", 
+        whatsapp: "12819651214", 
+        bio: "Full-Stack Developer from Houston, TX passionate about teachnology and cyber security. Pedro loves to help others and collablerate with the commumnity on projects.", 
     }
 
     classValue = {
-        subject: 1, 
+        subject: 10, 
         cost: "20", 
         // The proffy ID will come from the database
     }
