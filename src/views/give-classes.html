@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--Document Configuration-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proffy | Your platform to study online
+        </title>
+
+        <!--Links-->
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/partials/page-give-classes.css">
+        <link rel="stylesheet" href="/styles/partials/header.css">
+        <link rel="stylesheet" href="/styles/partials/forms.css">
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+        <!--Scripts-->
+        <script src="/scripts/addField.js" defer="defer"></script>
+
+    </head>
+
+    <body id="page-give-classes">
+
+        <div id="container">
+            <header class="page-header">
+                <div class="top-bar-container">
+                    <a href="/">
+                        <img src="/images/icons/back.svg" alt="Voltar">
+                    </a>
+                    <img src="/images/logo.svg" alt="Proffy">
+                </div>
+                <div class="header-content">
+                    <strong>It is awesome you want to teach others</strong>
+                    <p>
+                        The first step is to fill out this form
+                    </p>
+                </div>
+            </header>
+
+            <main>
+                <form action="/save-classes" id="create-class" method="POST">
+                    <fieldset>
+                        <legend>Your information</legend>
+
+                        <div class="input-block">
+                            <label for="name">Full name</label>
+                            <input name="name" id="name" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="avatar">Image link
+                                <small>(start with https://)</small>
+                            </label>
+                            <input name="avatar" id="avatar" type="url" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="whatsapp">Whatsapp</label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+
+                        <div class="textarea-block">
+                            <label for="bio">Biography</label>
+                            <textarea name="bio" id="bio" required="required"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            About the class
+                        </legend>
+                        <div class="select-block">
+                            <label for="subject">Subject</label>
+                            <select name="subject" id="subject" required="required">
+                                <option value="">Select an option</option>
+                                {%for subject in subjects %}
+                                    <option value="{{loop.index}}">
+                                        {{subject}}
+                                    </option>
+                                    {%endfor%}
+                                </select>
+                            </div>
+                            <div class="input-block">
+                                <label for="cost">
+                                    Price of your class per hour
+                                    <small>($)
+                                    </small>
+                                </label>
+                                <input name="cost" id="cost" type="number" required="required">
+                            </div>
+                        </fieldset>
+
+                        <fieldset id="schedule-items">
+                            <legend>
+                                Available times
+                                <button type="button" id="add-time">
+                                    + New time
+                                </button>
+                            </legend>
+                            <div class="schedule-item">
+
+                                <div class="select-block">
+                                    <label for="week-day">Weekday</label>
+                                    <select name="weekday[]" required="required">
+                                        <option value="">Select an option</option>
+                                        {%for weekday in weekdays %}
+                                            <option value="{{loop.index0}}">
+                                                {{weekday}}
+                                            </option>
+                                            {%endfor%}
+                                        </select>
+                                    </div>
+
+                                    <div class="input-block">
+                                        <label for="time_from">From</label>
+                                        <input type="time" name="time_from[]" required="required">
+                                    </div>
+
+                                    <div class="input-block">
+                                        <label for="time_to">To</label>
+                                        <input type="time" name="time_to[]" required="required">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+
+                        <footer>
+                            <p>
+                                <img src="/images/icons/warning.svg" alt="Important Warning">
+                                Important!
+                                <br>
+                                Please, fill out all the fields
+                            </p>
+                            <button type="submit" form="create-class">Save form</button>
+
+                        </footer>
+                    </main>
+                </div>
+
+            </body>
+        </html>
