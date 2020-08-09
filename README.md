@@ -27,7 +27,7 @@ This project was developed during Rocketseat's Next Level Week 2 (NLW2).
     http://localhost:5500/
 
 ##### :grey_exclamation: Observation: the databsae clean. In case you register a teaher and subsequently decide to clean the database, delete "database.db" file. After, run the command to create it again:
-    $ npm run database
+    $ node src/database/db.js
 
 ## 💻 Setting up your enviroment:
 
