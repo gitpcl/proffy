@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src=".github/readme-logo.svg" alt="Logo Proffy" />
+    <img src=".github/readme-logo.svg" alt="Logo Proffy" width="50%" />
 </h1>
 
 <h5 align="center">
