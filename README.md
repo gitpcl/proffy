@@ -29,22 +29,22 @@ This project was developed during Rocketseat's Next Level Week 2 (NLW2).
 ##### :grey_exclamation: Observation: the databsae clean. In case you register a teaher and subsequently decide to clean the database, delete "database.db" file. After, run the command to create it again:
     $ npm run database
 
-## :rocket: Setting up your enviroment:
+## 💻 Setting up your enviroment:
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-## :rocket: VSCode extensions used:
+## 🚀 VSCode extensions used:
 
 - [Nunjucks Template by eseom](https://marketplace.visualstudio.com/items?itemName=eseom.nunjucks-template)
 - [SQLite by alexcvzz](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
-## :rocket: Front-End Technologies used:
+## 👨‍💻 Front-End Technologies used:
 
 - [HTML](https://devdocs.io/html/)
 - [CSS](https://devdocs.io/css/)
 - [Javascript](https://devdocs.io/javascript/)
 
-## :rocket: Back-End Technologies used:
+## 👨‍🔧 Back-End Technologies used:
 
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
@@ -57,4 +57,4 @@ This project is under an MIT license. Please check the [LICENSE](LICENSE.md) for
 
 ---
 
-Made :red_heart: by Pedro Lopes 
+Made 💜 by Pedro Lopes 
