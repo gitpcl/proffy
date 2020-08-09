@@ -1,12 +1,12 @@
 <h1 align="center">
-    <img src=".github/logo-proffy.svg" alt="Logo Proffy" />
+    <img src=".github/readme-logo.svg" alt="Logo Proffy" />
 </h1>
 
 <h5 align="center">
-  <b>Your platform to study online.</b> ✊🏿
+  <b>Your platform to study online.</b> 👨‍🏫
 </h5>
 
-<img  src=".github/demo-hmo.gif" alt="Gif Houston Minority Owned" width="100%" />
+<img  src=".github/demo-proffy.gif" alt="Gif Proffy" width="100%" />
 
 ## :computer: About the project
 
