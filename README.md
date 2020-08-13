@@ -21,12 +21,12 @@ This project was developed during Rocketseat's Next Level Week 2 (NLW2).
     $ npm install --save
 
 ##### 3. Running the project.
-    $ npm start
+    $ npm run dev
 
 ##### 4. Open the browser on *URL*.
     http://localhost:5500/
 
-##### :grey_exclamation: Observation: the databsae clean. In case you register a teaher and subsequently decide to clean the database, delete "database.db" file. After, run the command to create it again:
+##### :grey_exclamation: Observation: If you decide to clean the database, delete "database.db" file. After, run the command to recreate it:
     $ node src/database/db.js
 
 ## 💻 Setting up your enviroment:
