@@ -6,7 +6,7 @@
         <!--Document Configuration-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proffy | Your platform to study online
+        <title>Proffy | Connect with teachers online
         </title>
 
         <!--Links-->
@@ -32,14 +32,14 @@
                 </div>
 
                 <div class="header-content">
-                    <strong>There are the available proffys</strong>
+                    <strong>Here are the available proffys</strong>
 
                     <form id="search-teachers">
 
                         <div class="select-block">
-                            <label for="subject">Matéria</label>
+                            <label for="subject">Subject</label>
                             <select name="subject" id="subject">
-                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="" disabled="" hidden="">Select an option</option>
                                 {%for subject in subjects %}
                                     <option value="{{loop.index}}" {{"selected" if filters.subject == loop.index}}>
                                         {{subject}}
@@ -49,9 +49,9 @@
                             </div>
 
                             <div class="select-block">
-                                <label for="weekday">Dia da semana</label>
+                                <label for="weekday">Weekday</label>
                                 <select name="weekday" id="weekday">
-                                    <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                    <option value="" disabled="" hidden="">Select an option</option>
                                     {%for weekday in weekdays %}
                                         <option value="{{loop.index0}}" {{"selected" if filters.weekday == loop.index0}}>
                                             {{weekday}}
@@ -61,11 +61,11 @@
                                 </div>
 
                                 <div class="input-block">
-                                    <label for="time">Hora</label>
+                                    <label for="time">Time</label>
                                     <input name="time" id="time" type="time" value="{{filters.time}}">
                                 </div>
 
-                                <button type="submit">Filtrar</button>
+                                <button type="submit">Filter</button>
 
                             </form>
                         </div>
@@ -91,7 +91,7 @@
                                     <p>{{proffy.bio}}</p>
 
                                     <footer>
-                                        <p>Preço/hora<strong>
+                                        <p>Price/Hour<strong>
                                                 ${{proffy.cost}}.00</strong>
                                         </p>
                                         <a href="https://api.whatsapp.com/send?1=pt_BR&phone={{proffy.whatsapp}}&text=Tenho interesse na sua aula de {{proffy.subject}} {{proffy.name}}" class="button" target="_blank">
