@@ -27,4 +27,7 @@ server
 .post("/save-classes", saveClasses)
 
 // Start server
-.listen(5500)
+const PORT = process.env.PORT || 5500
+server.listen(PORT, () => {
+    console.log(`App server listening on PORT: ${PORT}`)
+})
